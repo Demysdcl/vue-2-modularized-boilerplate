@@ -1,0 +1,21 @@
+{
+  "vue-template": {
+    "scope": "vue",
+    "prefix": "sml-vue-template",
+    "body": [
+      "<script>",
+      "export default {",
+      "\tdata: () => ({})",
+      "}",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div></div>",
+      "</template>",
+      "",
+      "<style scoped lang=\"scss\">",
+      "</style>",
+    ],
+    "description": "Basic template to vue file"
+  }
+}
