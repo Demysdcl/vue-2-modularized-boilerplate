@@ -13,8 +13,10 @@ module.exports = function (plop) {
       {
         type: 'addMany',
         destination: '../src/modules/{{ camelCase name }}',
-        templateFiles: './module',
+        templateFiles: './templates/module',
       },
     ], // array of actions
   })
+
+  plop.setGenerator('Create Base Component', {})
 }

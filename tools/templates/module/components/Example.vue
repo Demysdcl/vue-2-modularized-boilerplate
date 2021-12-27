@@ -2,6 +2,7 @@
 export default {
   name: 'Example',
   components: {},
+  data: () => ({}),
   computed: {},
   methods: {},
   mounted: {},
