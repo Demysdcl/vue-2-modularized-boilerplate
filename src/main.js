@@ -1,3 +1,5 @@
+import '@/modules/blog'
+import '@/modules/home'
 import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
