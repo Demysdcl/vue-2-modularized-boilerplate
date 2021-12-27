@@ -13,7 +13,7 @@ export default {
   <div class="example"></div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .example {
 }
 </style>
