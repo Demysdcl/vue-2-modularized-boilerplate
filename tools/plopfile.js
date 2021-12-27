@@ -1,22 +1,47 @@
 module.exports = function (plop) {
-  // create your generators here
+  plop.setGenerator('Create Base Component', {
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is the component name?',
+      },
+      {
+        type: 'input',
+        name: 'path',
+        message: 'Where you want to create the component?',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: '../src/{{path}}/{{pascalCase name}}.vue',
+        templateFile: './component/component.vue.hbs',
+      },
+    ],
+  })
+
   plop.setGenerator('Create Base Module', {
     description: 'Create a module with store, router e components folders',
     prompts: [
       {
         type: 'input',
         name: 'name',
-        message: 'What is the module name',
+        message: 'What is the module name?',
       },
     ],
     actions: [
       {
         type: 'addMany',
-        destination: '../src/modules/{{ camelCase name }}',
-        templateFiles: './templates/module',
+        destination: '../src/modules/{{camelCase name}}',
+        templateFiles: './module',
+      },
+      {
+        type: 'append',
+        path: '../src/main.js',
+        pattern: /\/\/plopfile append pattern - do not remove this comment/g,
+        template: "import '@/modules/{{camelCase name}}'",
       },
     ], // array of actions
   })
-
-  plop.setGenerator('Create Base Component', {})
 }
