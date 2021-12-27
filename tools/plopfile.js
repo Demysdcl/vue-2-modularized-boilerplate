@@ -38,9 +38,9 @@ module.exports = function (plop) {
       },
       {
         type: 'append',
-        path: '../src/main.js',
+        path: '../src/modules/index.js',
         pattern: /\/\/plopfile append pattern - do not remove this comment/g,
-        template: "import '@/modules/{{camelCase name}}'",
+        template: "import './{{camelCase name}}'",
       },
     ], // array of actions
   })

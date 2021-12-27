@@ -1,7 +1,4 @@
-//plopfile append pattern - do not remove this comment
-
-import '@/modules/blog'
-import '@/modules/home'
+import '@/modules'
 import Vue from 'vue'
 import App from './App.vue'
 import './registerServiceWorker'
