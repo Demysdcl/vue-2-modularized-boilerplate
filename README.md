@@ -1,4 +1,4 @@
-# vue-modularized-boilerplate
+# vue-2-modularized-boilerplate
 
 ## Project setup
 ```
